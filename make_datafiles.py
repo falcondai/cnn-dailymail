@@ -192,7 +192,7 @@ def write_to_bin(url_file, out_file, makevocab=False):
                     tokens = [t for t in tokens if t != ""]  # remove empty
                     vocab_counter.update(tokens)
 
-    print "Finished writing file %s\n" % out_file
+    print "Finished writing files %s and %s" % (out_file + '.src', out_file + '.tgt')
 
     # write vocab to file
     if makevocab:
